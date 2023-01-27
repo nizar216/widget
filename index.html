@@ -15,16 +15,14 @@
         const key = urlParams.get("key");
         let e = document.createElement("script"),
           t = document.head || document.getElementsByTagName("head")[0];
-        (e.src =
-          "./index.js"),
+        (e.src = "./index.js"),
           (e.type = type = "text/javascript"),
           (e.async = !0),
           (e.onload = () => {
             window.WebChat.default(
               {
                 customData: {
-                  secretKey:
-                    "T5P5t4fSeIrB1NhpXGyauUxIhNbeygnx7FL8wplx7k8k0w2oUNNORRD2QWPvz2PObUAAX6JuXeQqmc0Y6GDSfjPzDzGKF5Mlrt6ZSKhwqDEm0Yb04lxboEITqilHOBMn",
+                  secretKey: key,
                 },
                 socketUrl: "http://127.0.0.1:3000/",
                 withRules: true,
